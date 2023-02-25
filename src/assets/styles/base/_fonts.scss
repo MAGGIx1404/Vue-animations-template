@@ -8,3 +8,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "MessinaSansWeb SemiBold";
+  src: url("@/assets/fonts/MessinaSansWeb-Semibold.woff2") format("woff2"),
+    url("@/assets/fonts/MessinaSansWeb-Semibold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

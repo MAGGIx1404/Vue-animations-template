@@ -12,7 +12,9 @@ export default class Text {
 
   init() {
     this.textsAnimation = new Textify(); // create multiple instances for different animations
-    this.titlesAnimation = new TextifyTitle(); // create multiple instances for different animations
+    this.titlesAnimation = new TextifyTitle({
+      threshold: 0.5
+    }); // create multiple instances for different animations
   }
 
   show() {
