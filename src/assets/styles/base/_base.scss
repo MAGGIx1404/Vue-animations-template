@@ -90,3 +90,20 @@ h5,
 h6 {
   font-family: $font-text-bold;
 }
+
+// loader
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: $color-primary;
+  transition: all 1s ease;
+  @extend %grid-center;
+
+  &.inactive {
+    opacity: 0;
+  }
+}

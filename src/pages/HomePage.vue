@@ -1,4 +1,7 @@
 <template>
+  <div class="loader" ref="loader">
+    <h1 class="title">Loading...</h1>
+  </div>
   <div class="banner section">
     <div class="container">
       <h1 class="title" data-textify-title>WELCOME!!!</h1>
@@ -111,7 +114,8 @@ export default {
   name: "HomePage",
   data() {
     return {
-      images: null
+      images: null,
+      loaded: false
     };
   },
   methods: {
@@ -120,10 +124,22 @@ export default {
       new this.$loader({
         images: this.images,
         onLoaded: () => {
+          this.loaded = true;
           document.body.classList.add("loaded");
           new this.$textify(); // text animations
         }
       });
+    }
+  },
+  watch: {
+    loaded() {
+      if (this.loaded) {
+        this.$refs.loader.classList.add("inactive");
+
+        setTimeout(() => {
+          this.$refs.loader.remove();
+        }, 1000);
+      }
     }
   },
   mounted() {
