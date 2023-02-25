@@ -1,0 +1,58 @@
+.small-title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.title {
+  font-size: 18rem;
+  font-weight: bold;
+  line-height: 1.2;
+
+  @media only screen and (max-width: 812px) {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+}
+
+.sub-title {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @media only screen and (max-width: 812px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+
+  @media only screen and (max-width: 812px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.small-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  @media only screen and (max-width: 812px) {
+    font-size: 1.2rem;
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
+
+// line
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background: currentColor;
+}

@@ -1,0 +1,52 @@
+.content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  z-index: 1;
+}
+
+.container {
+  max-width: 90%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+
+  @media only screen and (max-width: 812px) {
+    min-height: auto;
+  }
+}
+
+// flexbox
+%flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+%half-flex {
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 100%;
+}
+
+%flex-column-center-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+%grid-center {
+  display: grid;
+  place-items: center;
+}
